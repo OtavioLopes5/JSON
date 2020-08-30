@@ -1,0 +1,188 @@
+
+<!-- FONTES DO SITE -->
+<!-- https://www.treinaweb.com.br/blog/o-que-e-json/ -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="prism/prism.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Json - O que você precisa saber</title>
+</head>
+<body class="line-numbers">
+    <nav class="nav">
+        <div class="container">
+            <div class="logo">
+               <a href="#"> <img src="img/json.svg" width="55px" alt="" class="calmo"> </a> 
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="#intro">Introdução</a></li>
+                    <li><a href="#jsonxml">XML Vs Json</a></li>
+                    <li><a href="#footer">Sobre</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+
+    <section class="home">
+        <h1 class="myH1">JSON</h1>
+        <h2 class="myH22">Por que e como utilizar, aprenda aqui!</p>
+    </section>
+    <div id="intro">
+
+            <h2 class="myH2">O que é JSON?</h2>
+            
+            <p class="myP">Derivado do JavaScript e especificado no ano 2000, JSON é um acrônimo de <strong>“Javascript Object Notation” </strong>ou simplesmente <strong>“Notação de objeto JavaScript”. </strong>É um modelo para a transmissão de informações no formato de texto entre diferentes linguagens. Em palavras mais simples, é um formato de serialização de dados muito utilizado em web services.</p>
+            
+            <p class="myP">Possui como uma das principais características a sua legibilidade, podendo facilmente ser lido por humanos, sem a necessidade de uma aplicação auxiliar. Podemos listar também como vantagens do JSON:</p>
+            
+            <ul class="padron">
+                <li>Arquivo com tamanho reduzido;</li>
+                <li>Suporta objetos;</li>
+                <li>Maior velocidade no transporte e execução de dados;</li>
+                <li>É utilizado por grandes empresas como Google, Facebook, Twitter, entre outras;</li>
+            </ul>
+
+            <h3 class="myH3">Tipos de dados do JSON</h3>
+
+            <p class="myP">O JSON possui apenas quatro tipos básicos: string, booleano, nulo ou numérico (podendo ser inteiro ou real)</p>
+
+            <p class="myP">Nota-se que para representar valores do tipo “strings” os mesmos devem ser inseridos entre aspas (duplas ou simples) o que não é necessário para os demais tipos.</p>
+
+            <p class="myP">Já em categoria, inserimos um array de strings utilizando colchetes [ ], como vamos citar abaixo.</p>
+
+            <p class="myP">para simplificar, podemos concluir que seus tipos básicos de dados são eles:</p>
+
+            <ul class="padron">
+                <li>
+                    <strong class="color-letter">string</strong>: Separados por <u> aspas duplas</u> ou <u>simples</u>. <i> Ex: </i>"isso é uma string" ou 'isso tambem é uma string';
+                </li>
+                <li>
+                    <strong class="color-letter">numérico</strong>: Sem o uso das aspas, podendo ser inteiro ou real. <i>Ex</i>: inteiro (2019) ou real (2.009);
+                </li>
+                <li>
+                    <strong class="color-letter">booleano</strong>: tipo lógico normal, podendo ser <strong>true</strong> ou <strong>false</strong>;
+                </li>
+                <li>
+                    <strong class="color-letter">nulo</strong>: valor nulo. <i>Ex</i>: “resumo”: null.
+                </li>
+            </ul>
+
+            <h3 class="myH3">Sintaxe no JSON</h3>
+
+            <p class="myP">Como já citado anteriormente, a sintaxe do JSON é <strong>extremamente simples</strong>, já que uma das suas principais características é a sua <strong>legibilidade</strong>.</p>
+            
+            <p class="myP">Basicamente, um JSON representa um objeto que possui seus atributos, cada atributo possui um determinado valor. </p>
+            
+            <p class="myP">Possui como elementos básicos:</p>
+            
+            <p class="myP"> 
+                <strong class="color-letter"> { }</strong> (chaves) para delimitar um objeto;<br>
+                <strong class="color-letter"> [ ]</strong> (colchetes) para delimitar um array;<br>
+                <strong class="color-letter">  :</strong> (dois pontos) para separar os atributos de valores;<br>
+                <strong class="color-letter">  ,</strong> (vírgula) para separar os atributos chave/valor.</p>
+           
+            <p class="myP">Vejamos o exemplo a seguir de uma exemplificação de um objeto (entre chaves <strong class="color-letter">{ }</strong>):</p>
+            
+            <!-- CODE BOX -->
+
+<section class="code-box">
+<pre  class="line-numbers"><code class="language-json">{
+    "titulo": "O que é JSON",
+    "ano": 2020,
+    "autor": "Otavio Lopes",
+    "postado": true,
+    "categoria": ["tecnologia", "desenvolvimento back-end", "desenvolvimento front-end", "programacao"],
+    "resumo": null
+}</code></pre></section>
+
+            
+
+
+<!-- XML JSON -->
+
+
+            <h3 class="myH3" id="jsonxml">JSON vs XML</h3>
+            <p class="myP">Primeiro precisamos saber o que é <strong>XML;</strong></p>
+            <p class="myP"><strong>Extensible Markup Language</strong>, ou simplesmente XML, é uma linguagem de marcação, ou seja, um conjunto de códigos para determinar a estrutura de dados para facilitar a troca de informação entre sistemas computacionais, lançado na década de 90 pela W3C (World Wide Web Consortium – órgão responsável pela definição da linguagem XML e pela padronização de outras iniciativas ligadas à Web).</p>    
+            <p class="myP">Além de ser facilmente lido sem o auxílio de qualquer software e ser responsável por prover uma língua “universal” para troca de informação entre aplicações, o XML possui como vantagens a fácil distribuição na Web, integração de dados de fontes diferentes, buscas mais eficientes, desenvolvimento de aplicações web flexíveis, entre outros.</p>
+            <p class="myP"><strong>Semelhanças:</strong></p>
+
+            <ul class="padron">
+                <li>Os dois modelos representam informações no formato texto.</li>
+                <li>Ambos são capazes de representar informação complexa, difícil de representar no formato tabular. Alguns exemplos: objetos compostos (objetos dentro de objetos), relações de hierarquia, atributos multivalorados, arrays, dados ausentes, etc.</li>
+                <li>Ambos possuem natureza auto-descritiva (ou seja, basta “bater o olho” em um arquivo JSON ou em um arquivo XML para entender o seu significado).</li>
+            </ul>
+
+            <p class="myP"><strong>Diferenças:</strong></p>
+            <ul class="padron">
+                <li>JSON não é uma linguagem de marcação. Não possui tag de abertura e muito menos de fechamento!</li>
+                <li>JSON representa as informações de forma mais compacta.</li>
+                <li>JSON não permite a execução de instruções de processamento, algo possível em XML.</li>
+                <li>JSON é tipicamente destinado para a troca de informações, enquanto XML possui mais aplicações. Por exemplo: nos dias atuais existem bancos de dados inteiros armazenados em XML e estruturados em SGBD’s XML nativo.</li>
+            </ul>
+
+            <p class="myP"><strong>Concluindo:</strong></p>
+
+            <p class="myP">Junto com a grande crescente do JavaScript dos últimos anos, o JSON se consolidou cada vez mais, aperfeiçoando sua tecnologia. Com isso, grandes vantagens que o XML possuía em relação ao JSON foram caindo aos poucos. Exemplo disso são os XML Schemas e o XSLT, por exemplo, que possuem equivalentes no JSON (JSON Schema e JOLT).            </p>
+
+            <p class="myP">Além disso, a adoção das principais linguagens de desenvolvimento com o JSON foi outro ponto crucial nessa crescente. Hoje, várias linguagens de desenvolvimento já possuem bibliotecas para uso do JSON, <u>como C++, Python, Perl, PHP, R e diversas outras.</u></p>    
+
+            <p class="myP">Com todas essas vantagens, é fácil afirmar que o JSON “matou” o XML, certo?</p>
+
+            <p class="myP">Bom, na realidade não.</p>
+
+            <p class="myP">Apesar de ser um pouco mais difícil de ser lido que o JSON e, em alguns casos, mais complicados de integrar, o XML é, sim, uma tecnologia forte. Grande parte dessa força está em sua comunidade, que ainda permanece ativa e com diversos membros, afinal, uma tecnologia tão grande assim não desaparece tão rapidamente, né?</p>
+
+            <p class="myP">Além disso, o XML é a tecnologia preferida para trabalhar com metadados, capaz de guardar ou vincular dados em qualquer formato, justamente pela liberdade dada ao usuário em definir as marcações que compõem um objeto.</p>
+
+            <h3 class="myH3">Então, qual desses devo utilizar?</h3>
+
+            <p class="myP">Como em tudo na tecnologia, não há certo ou errado. O XML e o JSON são ótimas ferramentas para transporte de informações entre diferentes aplicações. Engana-se quem acha que o XML “morreu” pelo JSON.</p>
+
+            <p class="myP">Apesar de ser mais popular e, nos principais casos, mais rápido, o JSON ainda não consegue trabalhar tão bem com dados mais complexos como o XML faz.<br>Sendo assim, antes de decidir usar o JSON ou XML, é sempre bom estudar um pouco seu projeto e analisar qual a melhor alternativa. Com certeza, uma das duas vai servir muito bem.</p>
+            
+            
+        </div >
+
+
+    <footer class="foot" id="footer">
+        
+        <p class="copy">Copyright &copy; 2020 | Design: Otávio Lopes Fernandes</p>
+        <p class="myPF"><strong>Fontes Utilizadas para o conteudo do site:</strong></p>
+        <p class="myPF"> <a href="https://www.json.org/json-pt.html" target="_blank" rel="noopener noreferrer" class="luneta">Site Oficial do JSON</a> </p>
+        <p class="myPF"> <a href="https://www.treinaweb.com.br/blog/o-que-e-json/" target="_blank" rel="noopener noreferrer" class="luneta">Treinaweb: O que é JSON?</a></p>
+        <p class="myPF"> <a href="https://www.treinaweb.com.br/blog/json-vs-xml/" target="_blank" rel="noopener noreferrer" class="luneta">Treinaweb: JSON vs XML</a> </p> 
+        <p class="myPF"> <a href="https://www.devmedia.com.br/json-tutorial/25275" target="_blank" rel="noopener noreferrer" class="luneta">Devmedia: JSON Tutorial</a> </p>
+        <p class="myPF"> <a href="https://www.devmedia.com.br/o-que-e-json/23166" target="_blank" rel="noopener noreferrer" class="luneta">Devmedia: O que é JSON</a> </p>
+
+    </footer>
+
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js.js"></script>
+    <script src="prism/prism.js"></script>
+
+<script>
+    $(window).scroll(function() {
+        if ($(document).scrollTop() > 50) {
+            $('.nav').addClass('affix');
+            console.log("OK");
+        } else {
+            $('.nav').removeClass('affix');
+        }
+    });
+</script>
+
+</html>
+
+
