@@ -339,6 +339,8 @@ body {
     }
 }
 
+
+
 .affix {
     padding: 0;
     background-color: #111;
@@ -405,10 +407,10 @@ body {
     color: white;
 }
 
-.padron {
-    text-indent: 2em;
+.ulpadrao {
+    text-indent: 1em;
 	text-align: justify;
-	padding-left:15%;
+    padding-left: 16.4%;
     padding-right:15%;
     line-height: 2;
 	font-size: 20px;
@@ -437,7 +439,7 @@ body {
 
 @media all and (max-width:700px){
 
-    .padron{
+    .ulpadrao{
         padding: 2%;
         font-size: 18px;
     }
@@ -458,6 +460,10 @@ body {
     .code-box{
         margin: 2%;
     }
+    
+    
+
+
 }
 
 
